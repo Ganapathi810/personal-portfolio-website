@@ -1,4 +1,7 @@
-# 📁 Portfolio Website ![Portfolio](/src/assets/logo.jpg)
+<h1>
+  <img src='/src/assets/logo.jpg' alt='logo' width='40' />
+  Portfolio Website
+</h1>
 
 A personal portfolio website with a clean, responsive design and smooth animations. Built to introduce who I am and showcase my skills through a modern, visually engaging interface.
 
