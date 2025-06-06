@@ -27,8 +27,8 @@ export const Projects = () => {
         id : 'portfolio',
         title : 'Portfolio Website',
         description : 'A personal portfolio with a clean, responsive design and smooth animations. Built to introduce who I am and highlight my skills through a modern, visually engaging interface. It includes dedicated sections for About, Projects, Skills, and Contact, all designed for clear and seamless navigation.',
-        githubLink : 'https://github.com/Ganapathi810/todo-app',
-        websiteLink : 'https://todoappfree.vercel.app/',
+        githubLink : 'https://github.com/Ganapathi810/personal-portfolio-website/',
+        websiteLink : 'https://personal-portfolio-website-iota-mauve.vercel.app/',
         video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/portfolioDemo.mp4'
       },
     ]
