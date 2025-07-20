@@ -3,17 +3,26 @@ import { ProjectCard } from "./ProjectCard";
 import { motion } from 'motion/react'
 
 export const Projects = () => {
-    const SKILLS = ['React','Express.js','Node.js','MongoDB','TailwindCSS']
     const { isMobile } = useResize()
 
     const PROJECTS_INFO = [
+      {
+        id : 'Blogging-website',
+        title : 'Blogging website',
+        description : 'Blogging Website is a responsive and dynamic web application designed with a clean UI that allows users to create, read, update, and delete blogs on any topic. It features secure authentication using providers like Google or GitHub, an intuitive editor for writing blogs, and a "clap" feature for readers to show appreciation. Users have personalized profiles showcasing their published blogs, and a built-in search functionality makes it easy to discover content.',
+        githubLink : 'https://github.com/Ganapathi810/blogging-website',
+        websiteLink : 'https://blogging-website-w7uh.vercel.app',
+        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/blogging-app.mp4',
+        skills : ['Next.js','NextAuth','Shadcn','TailwindCSS','PostgreSQL','Prisma ORM']
+      },
       {
         id : 'techvibe',
         title : 'Tech Vibe',
         description : 'Tech Vibe is a responsive web app where users can share and explore short videos focused entirely on technology—whether it’s the latest news, quick tutorials, or personal insights. It features a smooth, scrollable UI for seamless content discovery, along with user authentication, profiles, comments, and the ability to follow other creators. Built to foster a focused, engaging space for tech enthusiasts to connect and create.',
         githubLink : 'https://github.com/Ganapathi810/tech-vibe',
         websiteLink : 'https://tech-vibe-weld.vercel.app/',
-        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/techvibeDemo.mp4'
+        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/techvibeDemo.mp4',
+        skills : ['React.js','TailwindCSS','Express.js','Node.js','MongoDB','Firebase Auth','AWS S3']
       },
       {
         id : 'todoapp',
@@ -21,7 +30,8 @@ export const Projects = () => {
         description : 'A dynamic and responsive Todo App featuring CRUD Operations - Create, Read, Update, and Delete todos, user authentication, session handling, priority-based task management through drag and drop, and filtering options.',
         githubLink : 'https://github.com/Ganapathi810/todo-app',
         websiteLink : 'https://todoappfree.vercel.app/',
-        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/todoappDemo.mp4'
+        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/todoappDemo.mp4',
+        skills : ['React.js','TailwindCSS','Express.js','Node.js','MongoDB']
       },
       {
         id : 'portfolio',
@@ -29,7 +39,8 @@ export const Projects = () => {
         description : 'A personal portfolio with a clean, responsive design and smooth animations. Built to introduce who I am and highlight my skills through a modern, visually engaging interface. It includes dedicated sections for About, Projects, Skills, and Contact, all designed for clear and seamless navigation.',
         githubLink : 'https://github.com/Ganapathi810/personal-portfolio-website/',
         websiteLink : 'https://personal-portfolio-website-iota-mauve.vercel.app/',
-        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/portfolioDemo.mp4'
+        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/portfolioDemo.mp4',
+        skills : ['React.js','TailwindCSS','Express.js','Node.js','MongoDB','Motion'],
       },
     ]
 
@@ -77,7 +88,7 @@ export const Projects = () => {
               key={project.id} 
               title={project.title} 
               description={project.description} 
-              SKILLS={SKILLS} 
+              skills={project.skills} 
               websiteLink={project.websiteLink} 
               githubLink={project.githubLink}
               video={project.video}

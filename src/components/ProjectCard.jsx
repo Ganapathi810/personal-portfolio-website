@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react'
 
-export const ProjectCard = ({ title,description,SKILLS,githubLink,websiteLink,video }) => {
+export const ProjectCard = ({ title,description,skills,githubLink,websiteLink,video }) => {
     const containerRef = useRef();
     const videoRef = useRef();
     const isInView = useInView(videoRef)
@@ -90,28 +90,17 @@ export const ProjectCard = ({ title,description,SKILLS,githubLink,websiteLink,vi
                     once : true,
                     amount : 'some'    
                 }}
-
-                className='flex flex-col justify-between p-2'>
+                className='flex flex-col justify-between p-2'
+            >
                 <div>
                     <h2 className="font-thin pt-2 md:pt-3 text-2xl md:text-3xl text-white">{title}</h2>
                     <p className="font-normal text-md text-violet-200 pt-2 md:pt-4">{description}</p>
                     <div className="flex flex-wrap gap-3 mt-4">
-                        {SKILLS.map((skill) => {
-                            if(title === 'Portfolio Website')
-                                if(skill !== 'Express.js' && skill !== 'Node.js' && skill !== 'MongoDB')
-                                    return <div key={skill} className="bg-black px-2 py-0.5 rounded-md shadow-blue-900 shadow-md">
-                                        <span className="text-blue-400 font-semibold">{skill}</span>
-                                    </div>
-                                else return null
-                            else return <div key={skill} className="bg-black px-2 py-0.5 rounded-md shadow-blue-900 shadow-md">
+                        {skills.map((skill) => (
+                            <div key={skill} className="bg-black px-2 py-0.5 rounded-md shadow-blue-900 shadow-md">
                                 <span className="text-blue-400 font-semibold">{skill}</span>
                             </div>
-                        })}
-                        {title === 'Portfolio Website' && (
-                            <div className="bg-black px-2 py-0.5 rounded-md shadow-blue-900 shadow-md">
-                                <span className="text-blue-400 font-semibold">Motion</span>
-                            </div>
-                        )}
+                        ))}
                     </div>
                 </div>
                 <div className="flex justify-evenly mb-2 lg:mb-8 mt-6 ">

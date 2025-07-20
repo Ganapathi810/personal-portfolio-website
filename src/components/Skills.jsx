@@ -3,8 +3,10 @@ import { FaReact } from "react-icons/fa6";
 import { SiExpress,SiMongodb  } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt,FaGithub  } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
+import { RiTailwindCssFill,RiNextjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { SiTypescript,SiShadcnui,SiFastapi,SiPrisma } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 export const Skills = () => {
 
@@ -13,17 +15,21 @@ export const Skills = () => {
       category : 'Frontend:',
       direction : 'forward',
       icons : [
+
+        <RiNextjsFill className='size-10 sm:size-10 md:size-12 dark:fill-white fill-black'/>,
         <FaReact className='size-10 sm:size-10 md:size-12 dark:fill-blue-400 fill-blue-600'/>,
+        <SiTypescript className='size-10 sm:size-10 md:size-10 dark:fill-blue-600 text-white fill-blue-600' />,
         <IoLogoJavascript className='size-10 sm:size-10 dark:fill-yellow-400 fill-yellow-500'/>,
         <RiTailwindCssFill className='size-10 sm:size-10 dark:fill-blue-400 fill-blue-600' />,
-        <TbBrandFramerMotion className='size-10 sm:size-12 dark:fill-yellow-500 fill-yellow-600' />
+        <SiShadcnui className='size-10 sm:size-10 dark:fill-white fill-black' />,
+        <TbBrandFramerMotion className='size-10 sm:size-12 dark:fill-yellow-500 fill-yellow-600 text-yellow-600 dark:text-black' />
       ],
       initial : { x : '-100%'},
       animate : {
         x : 470
       },
       transition : {
-        duration : 6,
+        duration : 15,
         repeat : Infinity,
         ease : 'linear'
       }
@@ -33,13 +39,14 @@ export const Skills = () => {
       direction : 'backward',
       icons : [
         <SiExpress className='size-9 sm:size-10 md:size-12 dark:fill-white fill-black'/>,
+        <SiFastapi  press className='size-9 sm:size-10 md:size-11 dark:fill-green-500 fill-green-600'/>,
       ],
-      initial : { x : '1000%' },
+      initial : { x : '550%' },
       animate : {
         x : '-110%'
       },
       transition : {
-        duration : 6,
+        duration : 14,
         repeat : Infinity,
         ease : 'linear'
       }
@@ -49,13 +56,15 @@ export const Skills = () => {
       direction : 'backward',
       icons : [
         <SiMongodb className='size-9 sm:size-10 md:size-12 dark:fill-green-400 fill-green-500'/>,
+        <BiLogoPostgresql className='size-9 sm:size-10 md:size-12 dark:fill-cyan-700 fill-cyan-800'/>,
+        <SiPrisma className='size-9 sm:size-10 md:size-12 dark:fill-cyan-700 fill-cyan-800'/>,
       ],
-      initial : { x : '1200%' },
+      initial : { x : '200%' },
       animate : {
         x : '-110%'
       },
       transition : {
-        duration : 6,
+        duration : 13,
         repeat : Infinity,
         ease : 'linear'
       }
@@ -119,11 +128,11 @@ export const Skills = () => {
                 </motion.h1>
               </div>
           </div>
-          <div className='grid md:grid-cols-1 gap-5 xl:grid-cols-2 p-3 sm:pr-4 md:pr-5 lg:p-5 lg:pr-16 mt-16'>
-            {[...SKILL_ICONS].map((skillGroup,index) => (
+          <div className='grid md:grid-cols-1 gap-5 xl:grid-cols-2 p-3 pr-10 sm:pr-4 md:pr-5 lg:p-5 lg:pr-10 mt-16'>
+            {SKILL_ICONS.map((skillGroup,index) => (
               <motion.div 
                 key={index} 
-                className='flex gap-3 items-center justify-center'
+                className='flex gap-3 items-center justify-start md:justify-center'
                 initial={{
                   opacity : 0,
                   rotate : -90,
@@ -142,11 +151,11 @@ export const Skills = () => {
                   once : true,
                   amount : 'some'
                 }}
-                >
-                <div className='text-transparent bg-clip-text w-1/3  bg-gradient-to-r dark:from-violet-600 from-violet-700 dark:via-blue-400 via-blue-600  dark:to-green-700 to-green-800 tracking-wide md:text-2xl lg:text-3xl  text-center'>
+              >
+                <div className='text-transparent w-20  bg-clip-text ml-2  sm:w-40 lg:w-44  bg-gradient-to-r dark:from-violet-600 from-violet-700 dark:via-blue-400 via-blue-600  dark:to-green-700 to-green-800 tracking-wide md:text-2xl lg:text-3xl text-center'>
                   {skillGroup.category}
                 </div>
-                <div className='w-full lg:w-2/3 overflow-hidden bg-white/40 dark:bg-white/5 rounded-lg p-4 '>
+                <div className='w-[70vw] overflow-hidden bg-white/40 dark:bg-white/5 rounded-lg p-4'>
                   <motion.div
                     initial={skillGroup.initial}
                     animate={skillGroup.animate}

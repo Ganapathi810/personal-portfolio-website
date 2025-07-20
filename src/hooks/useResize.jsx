@@ -5,7 +5,6 @@ export const useResize = () => {
     const [isMediumOrAboveScreen,setIsMediumOrAboveScreen] = useState(window.innerWidth >= 768)
 
     useEffect(() => {
-        console.log('inside effect')
         const handleResize = () => {
             console.log('inside handleResize')
             console.log(window.innerWidth < 640)
