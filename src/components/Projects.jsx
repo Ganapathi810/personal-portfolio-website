@@ -58,9 +58,9 @@ export const Projects = () => {
                   key={index}
                   initial={{
                     filter : 'blur(7px)',
-                    x: index < 4 
-                      ? (isMobile ? -(176 - (index + 1) * 22) : -(240 - (index + 1) * 30)) 
-                      : (isMobile ? (index + 1) * 22 : (index + 1) * 30)
+                    x : index < 4 
+                      ? (isMobile ?  -(90 - (index + 1)*15) : -(240 - (index + 1) * 30)) 
+                      : (isMobile ? (index + 1) * 15 : (index + 1) * 30)
 
                   }}
                   whileInView={{

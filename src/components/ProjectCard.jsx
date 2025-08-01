@@ -1,10 +1,12 @@
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef } from 'react'
+import { useResize } from '../hooks/useResize';
 
 export const ProjectCard = ({ title,description,skills,githubLink,websiteLink,video }) => {
     const containerRef = useRef();
     const videoRef = useRef();
     const isInView = useInView(videoRef)
+    const { isMobile } = useResize()
 
     useEffect(() => {
         if(!videoRef.current)
@@ -17,6 +19,7 @@ export const ProjectCard = ({ title,description,skills,githubLink,websiteLink,vi
 
     },[isInView])
 
+    console.log(isMobile)
     return (
         <motion.div 
             initial={{
@@ -46,9 +49,9 @@ export const ProjectCard = ({ title,description,skills,githubLink,websiteLink,vi
             >
                 <motion.video
                     initial={{
-                        scale : 2,
-                        x : -300,
-                        y : 700
+                        scale : isMobile ? 1.4 : 2,
+                        x : isMobile ? -400 : -300,
+                        y : isMobile ? 300 : 700
                     }}
                     whileInView={{
                         scale : 1,
@@ -74,9 +77,9 @@ export const ProjectCard = ({ title,description,skills,githubLink,websiteLink,vi
             </motion.div>
             <motion.div 
                 initial={{
-                    scale : 2,
-                    x : 600,
-                    y : 700
+                    scale : isMobile ? 1.4 : 2,
+                    x : isMobile ? 400 : 600,
+                    y : isMobile ? 500 : 700
                 }}
                 whileInView={{
                     scale : 1,

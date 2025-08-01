@@ -7,9 +7,10 @@ import { RiTailwindCssFill,RiNextjsFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiTypescript,SiShadcnui,SiFastapi,SiPrisma } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { useResize } from '../hooks/useResize';
 
 export const Skills = () => {
-
+  const { isMobile } = useResize()
   const SKILL_ICONS = [
     {
       category : 'Frontend:',
@@ -103,27 +104,27 @@ export const Skills = () => {
                 >
                   {"Skills".split('').map((letter,index) => (
                     <motion.span
-                    key={index}
-                    initial={{
-                      filter : 'blur(7px)',
-                      x : index < 3 ? -(240 - (index + 1)*40) : (index + 1)*30
-                    }}
-                    whileInView={{
-                      filter : 'blur(0px)',
-                      type : 'spring',
-                      x : 0,
-                    }}
-                    viewport={{
-                      once : true,
-                      amount : 'some'
-                    }}
-                    transition={{
-                      duration : 2,
-                    }}
-                    className="relative z-10 inline-block before:absolute before:inset-0 before:z-30 before:rounded-lg before:blur-md before:bg-blue-800/60"
-                  >
-                    {letter}
-                  </motion.span>
+                      key={index}
+                      initial={{
+                        filter : 'blur(7px)',
+                        x : isMobile ? ((index < 3 ? -(100 - (index + 1)*20) : (index + 1)*20)) : (index < 3 ? -(240 - (index + 1)*40) : (index + 1)*30)
+                      }}
+                      whileInView={{
+                        filter : 'blur(0px)',
+                        type : 'spring',
+                        x : 0,
+                      }}
+                      viewport={{
+                        once : true,
+                        amount : 'some'
+                      }}
+                      transition={{
+                        duration : 2,
+                      }}
+                      className="relative z-10 inline-block before:absolute before:inset-0 before:z-30 before:rounded-lg before:blur-md before:bg-blue-800/60"
+                    >
+                      {letter}
+                    </motion.span>
                   ))}
                 </motion.h1>
               </div>
