@@ -7,6 +7,15 @@ export const Projects = () => {
 
     const PROJECTS_INFO = [
       {
+        id : 'ChatMind AI',
+        title : 'ChatMind AI',
+        description: 'A highly responsive real-time chatbot application designed for secure and interactive messaging. It features email-based authentication with strict access controls, ensuring users can only manage their own chats and messages. The system allows users to create chats, send and receive messages, and view conversations with instant updates. Each message triggers a workflow that validates ownership, processes the request through the OpenRouter ChatGPT model, stores the generated response, and returns it instantly to the chat interface, delivering a seamless and dynamic user experience.',
+        githubLink : 'https://github.com/Ganapathi810/chatbot',
+        websiteLink : 'https://chatbot-by-ganapathi.netlify.app/',
+        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/Recording+2025-08-22+232245.mp4',
+        skills : ['React.js','TypeScript','TailwdindCSS','Hasura','PostgreSQL','n8n automation platform','Nhost']
+      },
+      {
         id : 'Blogging-website',
         title : 'Blogging website',
         description : 'Blogging Website is a responsive and dynamic web application designed with a clean UI that allows users to create, read, update, and delete blogs on any topic. It features secure authentication using providers like Google or GitHub, an intuitive editor for writing blogs, and a "clap" feature for readers to show appreciation. Users have personalized profiles showcasing their published blogs, and a built-in search functionality makes it easy to discover content.',
