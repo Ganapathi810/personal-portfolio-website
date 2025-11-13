@@ -72,7 +72,7 @@ export const Home = () => {
                     <p className="relative z-50 mt-2 text-lg mb-4 animate-pulse text-black font-normal dark:text-white">I'm actively looking for opportunities. You can check out my resume.
                         <span>
                             <a
-                                href="/O_V_V_S_Ganapathi_Resume-13.pdf"  
+                                href="/O_V_V_S_Ganapathi_Resume.pdf"  
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline text-blue-600  hover:text-blue-300 ml-3"

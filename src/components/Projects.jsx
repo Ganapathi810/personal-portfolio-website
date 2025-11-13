@@ -7,6 +7,15 @@ export const Projects = () => {
 
     const PROJECTS_INFO = [
       {
+        id : 'Social AI',
+        title : 'Social AI',
+        description: 'It is an AI-powered social media management platform that helps users effortlessly create, publish, and track posts across LinkedIn and Twitter (X) from a single dashboard. It features an AI chat interface powered by the Gemini API for generating engaging post content, and integrates OAuth 2.0 for secure social account connections with one-click publishing. The platform also includes aggregated and individual post analytics to monitor engagement.',
+        githubLink : 'https://github.com/Ganapathi810/AI-powered-social-media-poster',
+        websiteLink : 'https://ai-powered-social-media-poster.vercel.app/',
+        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/social-ai.mp4',
+        skills : ['React.js','TypeScript','TailwdindCSS','Express.js','Node.js','MongoDB']
+      },
+      {
         id : 'ChatMind AI',
         title : 'ChatMind AI',
         description: 'A highly responsive real-time chatbot application designed for secure and interactive messaging. It features email-based authentication with strict access controls, ensuring users can only manage their own chats and messages. The system allows users to create chats, send and receive messages, and view conversations with instant updates. Each message triggers a workflow that validates ownership, processes the request through the OpenRouter ChatGPT model, stores the generated response, and returns it instantly to the chat interface, delivering a seamless and dynamic user experience.',
@@ -49,13 +58,13 @@ export const Projects = () => {
         githubLink : 'https://github.com/Ganapathi810/personal-portfolio-website/',
         websiteLink : 'https://personal-portfolio-website-iota-mauve.vercel.app/',
         video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/ganapathi-portfolio.mp4',
-        skills : ['React.js','TailwindCSS','Express.js','Node.js','MongoDB','Motion'],
+        skills : ['React.js','TailwindCSS','Framer Motion'],
       },
     ]
 
 
     return (
-      <div id='projects' className="mt-36 sm:mt-44 md:mt-64 lg:mt-72 xl:mt-52">
+      <div id='projects' className="mt-52 sm:mt-44 md:mt-64 lg:mt-72 xl:mt-52">
         <div className='text-3xl sm:text-4xl md:text-5xl font-semibold  flex justify-center mt-14 italic'>
             <h1 className="relative dark:text-black font-bold text-white"
               style={{
