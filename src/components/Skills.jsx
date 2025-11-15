@@ -172,7 +172,11 @@ export const Skills = () => {
               <span className='inline-block text-transparent w-20  bg-clip-text ml-2  sm:w-40 lg:w-44  bg-gradient-to-r dark:from-violet-600 from-violet-700 dark:via-blue-400 via-blue-600  dark:to-green-700 to-green-800 tracking-wide md:text-2xl lg:text-3xl text-center'>
                 {skillGroup.category}
               </span>
-              <div className='w-[70vw] max-w-lg overflow-hidden bg-white/40 dark:bg-white/5 rounded-lg p-4'>
+              <div
+                style={{
+                  maskImage: "linear-gradient(to right,transparent,black 18%,black 82%,transparent)"
+                }}
+                className='w-[70vw] max-w-lg overflow-hidden bg-white/40 dark:bg-white/5 rounded-lg p-4 border border-blue-400 dark:border-blue-500/10'>
                 <motion.div
                   initial={skillGroup.initial}
                   animate={skillGroup.animate}

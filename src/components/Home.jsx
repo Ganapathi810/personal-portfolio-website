@@ -30,7 +30,10 @@ export const Home = () => {
     }
 
     return (
-        <div id='about' className='block lg:flex lg:justify-between pt-32 md:pt-40 w-full min-h-screen relative z-10'> 
+        <div
+            id='about' 
+            className='block lg:flex lg:justify-between pt-32 md:pt-40 w-full min-h-screen relative z-10'
+        > 
             <motion.div 
                 initial='hidden'
                 animate='visible'
@@ -110,7 +113,7 @@ export const Home = () => {
                                  onUpdate : (latest) => window.scrollTo(0,latest)
                                })
                             }}
-                            className='relative z-30 text-slate-800 bg-white rounded-full flex justify-center items-center px-5 py-3 active:scale-105 active:tranform active:transition active:duration-100'
+                            className='relative z-30 text-slate-800 bg-white rounded-full flex justify-center items-center px-5 py-3 active:scale-105 active:tranform active:transition active:duration-200'
                         >
                             <span className='text-md font-semibold tracking-wide'>Contact me</span>
                         </button> 
