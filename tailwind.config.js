@@ -9,6 +9,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "cabinet-regular": ["CabinetGrotesk-Regular","sans-serif"],
+        "general-sans-extralight": ["GeneralSans-Extralight","sans-serif"],
+        "benspoke-light": ["BespokeSlab-Light","sans-serif"]
+      },
       dropShadow : {
         'glow' : [
           '10px 10px 200px rgba(0,0,255)',

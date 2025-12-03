@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "./assets/cabinet-grotesk.css";
+
+@import  "./assets/general-sans.css";
+
+@import "./assets/ranade.css";
+
+@import "./assets/bespoke-slab.css";

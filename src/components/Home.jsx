@@ -41,7 +41,7 @@ export const Home = () => {
                 className='text-center lg:text-left md:ml-10 lg:ml-16 xl:ml-36'>
                 <motion.h1
                     variants={childVariants}
-                    className='dark:text-slate-300 text-slate-800 font-bold text-4xl md:text-5xl'
+                    className='dark:text-slate-300 text-slate-800 font-bold text-4xl md:text-5xl font-ranade-regular'
                 >
                     Hi
                     <motion.span 
@@ -65,7 +65,7 @@ export const Home = () => {
                 </motion.h2>
                 <motion.p 
                     variants={childVariants}
-                    className='relative z-50 text-lg text-left dark:text-white text-slate-950 font-thin px-8 pt-7 md:px-0 md:pt-0 md:mt-10 md:mr-10 lg:mr-8 xl:mr-6  xl:w-11/12'
+                    className='font-benspoke-light font-extralight relative z-50 text-lg text-left dark:text-white text-slate-950  px-8 pt-7 md:px-0 md:pt-0 md:mt-10 md:mr-10 lg:mr-8 xl:mr-6  xl:w-11/12'
                 >
                     I am a <span className='text-blue-700 dark:text-blue-500 italic'>graduate</span> from <span className='text-blue-700 dark:text-blue-500 italic'>JNTUH College of Engineering Sultanpur</span> with a degree in <span className='text-blue-700 dark:text-blue-500 italic'>Computer Science and Engineering</span>. I graduated in mid-2024 and am seeking opportunities as a <span className='text-blue-700 dark:text-blue-500 italic'>Full-Stack Developer/Software engineer</span>. I specialize in building <span className='text-blue-700 dark:text-blue-500 italic'>responsive</span> and <span className='text-blue-700 dark:text-blue-500 italic'>dynamic</span> web applications using <span className='text-blue-700 dark:text-blue-500 italic'>Next.js</span>, <span className='text-blue-700 dark:text-blue-500 italic'>shadcn</span>, <span className='text-blue-700 dark:text-blue-500 italic'>MERN stack (MongoDB, Express.js, React, and Node.js)</span>.
 

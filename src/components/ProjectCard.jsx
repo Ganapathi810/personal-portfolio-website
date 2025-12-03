@@ -96,7 +96,7 @@ export const ProjectCard = ({ title,description,skills,githubLink,websiteLink,vi
                 className='flex flex-col justify-between p-2'
             >
                 <div>
-                    <h2 className="font-thin pt-2 md:pt-3 text-2xl md:text-3xl text-white tracking-wider">{title}</h2>
+                    <h2 className="pt-2 md:pt-3 text-2xl md:text-3xl text-white tracking-wide font-cabinet-regular font-thin">{title}</h2>
                     <p className="font-normal text-md text-violet-200 pt-2 md:pt-4 ">{description}</p>
                     <div className="flex flex-wrap gap-3 mt-4">
                         {skills.map((skill) => (

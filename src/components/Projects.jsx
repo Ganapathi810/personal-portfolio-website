@@ -7,6 +7,15 @@ export const Projects = () => {
 
     const PROJECTS_INFO = [
       {
+        id : 'Shortly',
+        title : 'Shortly',
+        description: 'It is a highly responsive and dynamic URL shortener application that converts long URLs into clean, shareable short links and automatically redirects users to the original destination. The platform includes a powerful dashboard to manage all short links, view detailed analytics, track clicks, and analyze location data. Each short link has its own dedicated information page, and features like OAuth authentication (Neon Auth), filtering, searching, and full create/delete management make the experience smooth and efficient.',
+        githubLink : 'https://github.com/Ganapathi810/shortly/',
+        websiteLink : 'https://shortly-urlshortner-new.vercel.app/',
+        video : 'https://portfolio-project-videos.s3.us-east-1.amazonaws.com/shortly.mp4',
+        skills : ["Next.js","TailwindCSS","Shadcn UI","Neon(PostgreSQL)","Neon Auth", "Prisma ORM" ]
+      },
+      {
         id : 'Social AI',
         title : 'Social AI',
         description: 'It is an AI-powered social media management platform that helps users effortlessly create, publish, and track posts across LinkedIn and Twitter (X) from a single dashboard. It features an AI chat interface powered by the Gemini API for generating engaging post content, and integrates OAuth 2.0 for secure social account connections with one-click publishing. The platform also includes aggregated and individual post analytics to monitor engagement.',
